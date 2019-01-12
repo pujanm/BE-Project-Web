@@ -7,7 +7,7 @@ Developing a System for BE Projects.
 
 ### Basic System Prerequisites:
 ```
-Python >= 3.6
+Python == 3.6
 pip >= 18.1
 virtualenv >= 16.0.0
 ```
@@ -20,4 +20,4 @@ pip3 install -r requirements.txt
 python3 manage.py migrate
 python3 manage.py runserver
 ```
-### Note: <br> 1) Don't forget to run ``` black BEProjectsApp/ and black BEProjectsWeb/``` before adding or committing or pushing any code otherwise, the code won't be formatted properly and you might end up getting Travis CI Build fails.
+##### Note: <br> 1) Don't forget to run ``` black BEProjectsApp/ and black BEProjectsWeb/``` before adding or committing or pushing any code otherwise, the code won't be formatted properly and you might end up getting Travis CI Build fails.
