@@ -103,6 +103,16 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+<<<<<<< HEAD
+#VScode
+.vscode
+
+#PIPfile
+Pipfile
+Pipfile.lock
+
+media/*
+=======
 
 
 **/migrations
@@ -110,3 +120,4 @@ venv.bak/
 media/
 
 
+>>>>>>> 6dca954

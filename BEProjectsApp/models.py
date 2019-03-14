@@ -26,6 +26,9 @@ class TeacherProfile(models.Model):
     # additional attributes
     subject = models.CharField(max_length=150)
 
+    def __str__(self):
+        return self.user.username
+
 
 # In house Project model
 class Project(models.Model):
@@ -63,10 +66,13 @@ class Project(models.Model):
         return self.title
 
 
-class Contributer(models.Model):
+class Contributor(models.Model):
     name = models.CharField(max_length=100, blank=False)
     last_name = models.CharField(max_length=100, blank=False)
     email = models.CharField(max_length=100, blank=False)
     project = models.ForeignKey(
-        Project, related_name="contributer", on_delete=models.CASCADE
+        Project, related_name="contributor", on_delete=models.CASCADE
     )
+
+    def __str__(self):
+        return self.name + " " + self.last_name
