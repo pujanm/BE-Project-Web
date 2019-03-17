@@ -15,9 +15,5 @@ router.register(r"contributors", views.ContributorViewSet)
 
 urlpatterns = [
     url(r"^api/", include(router.urls)),
-<<<<<<< HEAD
-    url(r"^api/search/", views.SearchProjectView.as_view(), name="search"),
-=======
     path("api/search/", views.SearchProjectView.as_view(), name="search"),
->>>>>>> 3b025ab4e6821ce603a7e27138a2fcbff070b1fc
 ]
